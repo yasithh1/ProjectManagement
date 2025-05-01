@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Labor Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            color: #388e3c;
+            font-weight: bold;
+        }
+        .details {
+            margin-top: 20px;
+        }
+        .right-align {
+            text-align: right;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #388e3c;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #c8e6c9;
+        }
+        .total {
+            font-weight: bold;
+            color: #388e3c;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+<img src="src/main/java/com/main/ProjectManager/img.png" alt="Keells Logo" class="logo" width="100"/>
+<div class="title">Labor Report</div>
+<div class="details">
+    <p>Request ID: <span th:text="${requestId}"></span></p>
+    <p>Receiver: <span th:text="${receiver}"></span></p>
+    <p>Request Date: <span th:text="${date}"></span></p>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>Labor Name</th>
+        <th>Type</th>
+        <th>Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="labor : ${labors}">
+        <td th:text="${labor.name}"></td>
+        <td th:text="${labor.type}"></td>
+        <td th:text="${labor.phone}"></td>
+    </tr>
+    </tbody>
+</table>
+<div class="right-align">
+    <p>Print Date: <span th:text="${printDate}"></span></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Admin Dashboard */
+.admin-dashboard {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Dashboard Tiles */
+  .dashboard-main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 20px 20px 20px;
+    background-color: #f9f9f9;
+    flex-grow: 1;
+  }
+  
+  .tile {
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .tile:hover {
+    transform: scale(1.05);
+  }
+  
+  .tile h2 {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Form Popup */
+  .form-popup {
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 25%;
+    background-color: rgb(168, 235, 171);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .form-container h2{
+    text-align: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.form-container form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-container form input:name{
+  padding: 8px 10px;
+}
+
+.form-container form button {
+  padding: 10px 50px;
+  background-color: rgb(0, 247, 12);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.form-container form button:hover {
+  background-color: rgb(0, 200, 10);
+}
+
+.form-container button {
+  background-color: #ddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;    
+}
+
+.form-actions{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  margin-top: 40px;
+}
+

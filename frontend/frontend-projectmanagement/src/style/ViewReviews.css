@@ -1,0 +1,33 @@
+.view-reviews-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+  
+  .view-reviews-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .review {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review h3 {
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .review p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+  }
+  

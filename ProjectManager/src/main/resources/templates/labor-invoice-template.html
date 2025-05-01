@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Labor Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* White background */
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            color: #388e3c; /* Green color */
+            font-weight: bold; /* Bold title */
+        }
+        .details {
+            margin-top: 20px;
+        }
+        .right-align {
+            text-align: right;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #388e3c; /* Green border */
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #c8e6c9; /* Light green background for header */
+        }
+        .total {
+            font-weight: bold;
+            color: #388e3c; /* Green color */
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+<img src="src/main/java/com/main/ProjectManager/img.png" alt="Keells Logo" class="logo" width="100"/>
+<div class="title">Labor Invoice</div>
+<div class="details">
+    <p>Receiver: <span th:text="${receiver}"></span></p>
+    <p>Printed By: <span th:text="${printName}"></span></p>
+    <p>Project ID: <span th:text="${projectId}"></span></p> <!-- Add project ID here -->
+</div>
+<div class="right-align">
+    <p>Printed on: <span th:text="${printDate}"></span></p>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>Labor Name</th>
+        <th>Type</th>
+        <th>Assigned Date</th>
+        <th>Sign Out Date</th>
+        <th>Days Worked</th>
+        <th>Daily Charge</th>
+        <th>Total Charge</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="laborWithDates : ${laborsWithDates}">
+        <td th:text="${laborWithDates.labor.name}"></td>
+        <td th:text="${laborWithDates.labor.type}"></td>
+        <td th:text="${laborWithDates.assignDate}"></td>
+        <td th:text="${laborWithDates.signOutDate}"></td>
+        <td th:text="${laborWithDates.daysWorked}"></td>
+        <td th:text="'Rs. ' + ${laborWithDates.dailyCharge} + '.00'"></td>
+        <td th:text="'Rs. ' + ${laborWithDates.totalCharge} + '.00'"></td>
+    </tr>
+    </tbody>
+</table>
+<div class="right-align total">
+    Total: Rs. <span th:text="${totalCharge}"></span>.00
+</div>
+</body>
+</html>

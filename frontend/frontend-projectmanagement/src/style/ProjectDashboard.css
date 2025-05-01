@@ -1,0 +1,201 @@
+.project-dashboard-container {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     background-color: #f0fff4; /* Light green background */
+   }
+   
+   .project-dashboard-container .progress-circles {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
+   }
+   
+   .progress-circle-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0 20px;
+   }
+   
+   .progress-circle {
+     position: relative;
+     width: 120px;
+     height: 120px;
+     margin-bottom: 10px;
+   }
+   
+   .progress-circle svg {
+     width: 100%;
+     height: 100%;
+   }
+   
+   .circle-center {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 1.2em;
+     font-weight: bold;
+     color: #007BFF;
+   }
+   
+   .open-form-btn {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     background-color: #28a745; /* Green button */
+     color: white;
+     border: none;
+     border-radius: 5px;
+     padding: 10px 20px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   .open-form-btn:hover {
+     background-color: #218838;
+   }
+   
+   .tables-layout {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     padding: 20px;
+   }
+   
+   .project-table-container,
+   .task-table-container {
+     flex: 1;
+     margin: 0 10px;
+     background-color: white;
+     padding: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+   }
+   
+   .project-table {
+     width: 100%;
+     border-collapse: collapse;
+   }
+   
+   .project-table th,
+   .project-table td {
+     padding: 12px;
+     text-align: left;
+     border-bottom: 1px solid #ddd;
+   }
+   
+   .project-table th {
+     background-color: #e9f5e9; /* Light green header */
+   }
+   
+   .project-table tbody tr:hover {
+     background-color: #f1f8f1; /* Light green hover */
+   }
+   
+   .task-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+   }
+   
+   .task-table th,
+   .task-table td {
+     padding: 12px;
+     text-align: left;
+     border-bottom: 1px solid #ddd;
+   }
+   
+   .task-table th {
+     background-color: #e9f5e9; /* Light green header */
+   }
+   
+   .upload-form {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+   }
+   
+   .upload-form h3 {
+     margin-bottom: 20px;
+   }
+   
+   .upload-form label {
+     display: block;
+     margin-bottom: 10px;
+   }
+   
+   .upload-form input[type="text"],
+   .upload-form input[type="file"] {
+     width: 100%;
+     padding: 10px;
+     margin-top: 5px;
+     margin-bottom: 10px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+   }
+   
+   .upload-form button {
+     background-color: #28a745;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     padding: 10px 20px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   .upload-form button:hover {
+     background-color: #218838;
+   }
+   
+   /* Overlay for the modal */
+   .modal-overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 999;
+   }
+   .completed-row {
+     background-color: #e0ffe0; /* Light green for completed projects */
+   }
+   
+   .project-table tbody tr:hover {
+     background-color: #f0f0f0; /* Light grey for hover effect */
+   }
+   
+   .project-table-container td {
+     position: relative;
+   }
+   
+   .project-table-container td .CheckCircleIcon {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     margin-left: 10px;
+     color: green;
+   }
+   .completed-row {
+    background-color: #e0ffe0; /* Light green for completed projects */
+  }
+  
+  .past-due-row {
+    background-color: #ffe0e0; /* Light red for past due projects */
+  }
+  
+  .project-table tbody tr:hover {
+    background-color: #f1f8f1; /* Light grey for hover effect */
+  }
+  
+  .project-table-container td {
+    position: relative;
+  }
+  

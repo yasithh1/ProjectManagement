@@ -1,0 +1,258 @@
+.SmallTile {
+  width: 150px;               /* Set the tile width */
+  padding: 10px;              /* Add padding around the content */
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;              /* Flexbox for horizontal layout */
+  align-items: center;        /* Center items vertically */
+  justify-content: center;    /* Center content horizontally */
+  gap: 10px;                  /* Space between icon and text */
+  white-space: nowrap;        /* Prevent text from wrapping */
+}
+
+.SmallTile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.SmallTile-icon .material-icons {
+  font-size: 24px;            /* Adjust icon size */
+}
+
+.SmallTile-info h4 {
+  font-size: 14px;            /* Adjust text size */
+  margin: 0;                  /* Remove default margin */
+}
+.manage-vendors {
+  padding: 20px;
+  text-align: center;
+}
+
+.small-tiles-container {
+  display: flex;                  /* Arrange tiles in a row */
+  justify-content: center;        /* Center tiles horizontally */
+  align-items: center;            /* Align tiles vertically */
+  gap: 20px;                      /* Space between each tile */
+  flex-wrap: nowrap;              /* Prevent tiles from wrapping to the next line */
+  margin-bottom: 20px;
+}
+
+.SmallTile {
+  width: 150px;                   /* Fixed width for each tile */
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;                      /* Space between icon and text */
+  white-space: nowrap;            /* Prevent text from wrapping */
+}
+
+.SmallTile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.SmallTile-icon .material-icons {
+  font-size: 24px;                /* Adjust icon size */
+}
+
+.SmallTile-info h4 {
+  font-size: 14px;
+  margin: 0;                      /* Remove default margin */
+}
+.vendor-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.vendor-table th, .vendor-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.vendor-table th {
+  background-color: #f4f4f4;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.update-button {
+  background-color: #ff9800;
+  color: white;
+  margin-right: 10px;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* Container for the Manage Vendor section */
+.manage-vendors {
+  padding: 30px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align inputs to the left by default */
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff; /* White background for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Label styling */
+form label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+  width: 100%; /* Ensure label is wide enough */
+  text-align: left;
+}
+
+/* Input field styling */
+form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+/* Focus effect on input fields */
+form input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4); /* Green glow on focus */
+}
+
+/* Button styling */
+form button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Full width button */
+}
+
+/* Hover effect for the button */
+form button:hover {
+  background-color: #45a049;
+}
+
+/* For vendor table styling */
+.vendor-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for table */
+  border-radius: 8px;
+}
+
+/* Table header styling */
+.vendor-table th {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Table cell styling */
+.vendor-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Table row hover effect */
+.vendor-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button styling for table actions */
+button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+/* Update button */
+.update-button {
+  background-color: #ff9800;
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #e68900;
+}
+
+/* Delete button */
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,84 @@
+.emp-detail {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.container {
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.employeeList {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.employeeHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  background-color: #f3f3f3;
+}
+
+.employeeData {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.employeeData:hover {
+  transform: scale(1.02);
+  background-color: #f9f9f9;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it appears above everything else */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

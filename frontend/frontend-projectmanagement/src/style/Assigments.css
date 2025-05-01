@@ -1,0 +1,137 @@
+/* Container */
+.assignments-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Header */
+.assignments-title {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+/* Assignments List */
+.assignments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.assignment-item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.assignment-item:hover {
+  background-color: #e0f7fa;
+}
+
+.assignment-title {
+  margin: 0 0 10px;
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.assignment-detail {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.assignment-detail span {
+  font-weight: bold;
+  color: #333;
+}
+
+.expanded-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  background-color: #fffde7;
+  border-radius: 8px;
+}
+
+.assignment-detail:nth-of-type(odd) {
+  background-color: #f1f8e9;
+}
+
+.assignment-detail:nth-of-type(even) {
+  background-color: #e3f2fd;
+}
+
+/* Supporter Tasks */
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.task-item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #ffe0b2;
+}
+
+.task-title {
+  margin: 0 0 10px;
+  color: #bf360c;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.task-detail {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.task-detail span {
+  font-weight: bold;
+  color: #333;
+}
+
+.task-detail select,
+.task-detail input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.task-detail button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-detail button:hover {
+  background-color: #b71c1c;
+}

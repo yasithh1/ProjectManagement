@@ -1,0 +1,48 @@
+.proposal-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .proposal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .proposal-table th,
+  .proposal-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #6bad5e;
+  }
+  
+  .proposal-table th {
+    background-color: #3ead3a;
+  }
+  
+  button {
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .approve-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .reject-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  

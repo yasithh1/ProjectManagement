@@ -1,0 +1,170 @@
+/* Main container */
+.supplier-login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65vh;
+  background-color: #ffffff;
+  margin-left: 1%;
+  overflow: hidden;
+}
+
+/* Sign-In Section (Left Side) */
+.supplier-signin-section {
+  flex: 1;
+  max-width: 50%;
+  padding: 3.8%;
+  margin-right: 0%;
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #6cd071;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: black;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.supplier-signin-section h2 {
+  color: black;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-bottom: 10%;
+}
+
+.supplier-signin-section form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: -6%;
+  margin-left: -4%;
+}
+
+.supplier-signin-section form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.supplier-signin-section form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.supplier-signin-section .forget-password {
+  display: block;
+  margin: 10px 0;
+  text-align: right;
+  font-size: 14px;
+  color: #0279f9;
+  text-decoration: none;
+}
+
+.supplier-signin-section .forget-password:hover {
+  text-decoration: underline;
+}
+
+.supplier-signin-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #17008a;
+  color: white;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.supplier-signin-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sign-Up Section (Right Side) */
+.supplier-signup-section {
+  flex: 1;
+  max-width: 50%;
+  padding: 2.5%;
+  margin-right: 24%;
+  padding-bottom: 10.2%;
+  margin-left: -0.2%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  background-color: #174b19;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  height: 56%;
+}
+
+.supplier-signup-section h2 {
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.supplier-signup-section h2 {
+  margin: 32px 0 5px;
+  padding-top: 90px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.supplier-signup-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #1d471f;
+  border: 1px solid #255e27;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.supplier-signup-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.supplier-signup-button:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .supplier-login-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .supplier-signin-section, .supplier-signup-section {
+    max-width: 100%;
+    margin: 5% 5% 5% 5%;
+    padding: 5%;
+  }
+
+  .supplier-signin-section {
+    height: auto;
+  }
+
+  .supplier-signup-section {
+    height: auto;
+  }
+}

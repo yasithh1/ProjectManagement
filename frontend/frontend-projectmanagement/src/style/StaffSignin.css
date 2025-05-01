@@ -1,0 +1,108 @@
+.staff-sign-in-container {
+    background: rgba(135, 206, 167, 0.87);
+    backdrop-filter: blur(15px);
+    width: 90%;
+    max-width: 400px;
+    min-height: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); 
+    margin: 0 auto; 
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    gap: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2e7d32; 
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.staff-input-container {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-right: 10px;
+    gap: 30px; 
+}
+
+.input-staff {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    margin-bottom: 30px; 
+    
+}
+
+
+.staff-input-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+.input-staff input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    color: #333; 
+}
+
+
+.staff-toggle-password {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    top: 48%;
+    transform: translateY(-50%);
+}
+
+
+.staff-forgot-pass {
+    font-size: 14px;
+    color: #1b5e20; 
+    text-decoration: underline;
+    text-align: right;
+    cursor: pointer;
+    margin-top: -10%; 
+    align-self: flex-end;
+}
+
+
+.staff-login {
+    width: 80%;
+    max-width: 250px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin: 80px auto 0; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.staff-login:hover {
+    background-color: #388e3c; 
+    transform: scale(1.05); 
+}

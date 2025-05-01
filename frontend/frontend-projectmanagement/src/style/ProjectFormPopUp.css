@@ -1,0 +1,64 @@
+.project-form-popup {
+     position: fixed;
+     top: 45%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 400px;
+     background-color: white;
+     padding: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+     z-index: 1000; /* Ensure it appears above other content */
+   }
+   
+   .project-form-popup .popup-content {
+     display: flex;
+     flex-direction: column;
+   }
+   
+   .project-form-popup .form-group {
+     margin-bottom: 15px;
+   }
+   
+   .project-form-popup .form-group label {
+     margin-bottom: 5px;
+   }
+   
+   .project-form-popup .form-group input,
+   .project-form-popup .form-group select {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+   }
+   
+   .project-form-popup .form-actions {
+     display: flex;
+     justify-content: space-between;
+     gap:  130px;
+   }
+   
+   .project-form-popup .submit-btn,
+   .project-form-popup .cancel-btn {
+     flex: 1;
+     background-color: #28a745; /* Green button */
+     color: white;
+     border: none;
+     border-radius: 5px;
+     padding: 10px 20px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   .project-form-popup .cancel-btn {
+     background-color: #dc3545; /* Red button */
+   }
+   
+   .project-form-popup .submit-btn:hover {
+     background-color: #218838;
+   }
+   
+   .project-form-popup .cancel-btn:hover {
+     background-color: #c82333;
+   }
+   

@@ -1,0 +1,59 @@
+
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: margin-top 0.3s ease;
+    margin-top: 60px; 
+}
+
+.main-content.collapsed {
+    margin-top: 40px; 
+}
+
+
+.Sdashboard-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    margin-bottom: 20px; 
+}
+
+.dashboard-header h2 {
+    margin: 0; 
+    font-size: 2.5rem; 
+    color: #333; 
+}
+
+
+
+.Tile {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.Tile:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.Tile-icon {
+    font-size: 40px; 
+    margin-bottom: -22px;
+    color: #2d2d2d; 
+}
+
+.Tile-info {
+    font-size: 18px;
+    color: #333; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+}

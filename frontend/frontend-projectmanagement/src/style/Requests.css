@@ -1,0 +1,64 @@
+.requests-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.requests-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.requests-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.requests-container th, .requests-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.requests-container th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.requests-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.requests-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+.requests-container button {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.requests-container button:hover {
+  opacity: 0.8;
+}
+
+.requests-container button:first-of-type {
+  background-color: #4CAF50; /* Accept button color */
+  color: white;
+}
+
+.requests-container button:last-of-type {
+  background-color: #f44336; /* Reject button color */
+  color: white;
+}

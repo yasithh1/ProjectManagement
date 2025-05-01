@@ -1,0 +1,224 @@
+
+
+/* Header Styling */
+h1 {
+  color: #62b221;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  position: relative;
+}
+
+.progress-step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+  color: white;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.progress-step.active {
+  background: #62b221;
+  border-color: #62b221;
+}
+
+.progress-step.completed {
+  background: #62b221;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  right: 40px;
+  height: 4px;
+  background: #ccc;
+  z-index: 0;
+}
+
+.progress-line {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  height: 4px;
+  background: #62b221;
+  z-index: 1;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Adjust progress line width based on step */
+[data-step="2"] .progress-line {
+  width: 33.3%;
+}
+
+[data-step="3"] .progress-line {
+  width: 66.6%;
+}
+
+[data-step="4"] .progress-line {
+  width: 100%;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Form Content */
+.form-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Form Rows */
+.form-row,
+.form-row-last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-row {
+  justify-content: flex-start;
+  gap: 200px;
+}
+
+.form-row label {
+  width: 18%;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.clarify-label {
+  margin-right: -20px;
+}
+
+/*Sub Topic*/
+h3 {
+  text-align: left;
+  margin-left: 0;
+}
+
+h4 {
+  text-align: left;
+  margin-left: 0;
+}
+
+/* Increase gap between labels and inputs for more separation */
+.form-row > *:not(:first-child),
+.form-row-last > *:not(:first-child) {
+  margin-left: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  
+}
+
+.input-group input {
+  width: 65%; /* Adjust width */
+}
+
+.input-group .verify-button {
+  margin-left: 10px;
+  width: auto;
+}
+
+/* Verify button specific */
+.verify-button {
+  background-color: #62b221;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.verify-button:hover {
+  background-color: #4e8f1a;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prev-button,
+.next-button,
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.prev-button {
+  background-color: #ccc;
+  color: #333;
+}
+
+.prev-button:hover {
+  background-color: #aaa;
+}
+
+.next-button {
+  background-color: #62b221;
+  color: white;
+}
+
+.next-button:hover {
+  background-color: #4e8f1a;
+}
+
+.submit-button {
+  background-color: #333;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}

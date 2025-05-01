@@ -1,0 +1,49 @@
+.irr-calculator {
+     max-width: 400px;
+     margin: 20px auto;
+     padding: 20px;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     background-color: #f9f9f9;
+     text-align: center;
+   }
+   
+   .input-section {
+     margin-bottom: 20px;
+   }
+   
+   .input-section input {
+     padding: 10px;
+     width: 70%;
+     margin-right: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+   }
+   
+   .input-section button {
+     padding: 10px 15px;
+     border: none;
+     background-color: #007bff;
+     color: white;
+     cursor: pointer;
+     border-radius: 4px;
+   }
+   
+   .input-section button:hover {
+     background-color: #0056b3;
+   }
+   
+   .cash-flows {
+     margin-bottom: 20px;
+   }
+   
+   .cash-flows div {
+     margin: 5px 0;
+   }
+   
+   .result {
+     margin-top: 20px;
+     font-size: 1.2em;
+     color: #28a745;
+   }
+   

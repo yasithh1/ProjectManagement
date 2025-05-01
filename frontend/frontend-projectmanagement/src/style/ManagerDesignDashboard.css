@@ -1,0 +1,198 @@
+.design-report-container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+   }
+   
+   .employee-input,
+   .employee-name {
+     margin-bottom: 20px;
+     display: flex;
+     align-items: center;
+   }
+   
+   .employee-input label {
+     margin-right: 10px;
+   }
+   
+   .employee-input input {
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     width: 200px;
+   }
+   
+   .progress-circles {
+     display: flex;
+     justify-content: space-around;
+     margin-bottom: 40px;
+   }
+   
+   .progress-circle-container {
+     text-align: center;
+   }
+   
+   .progress-circle {
+     position: relative;
+     width: 120px;
+     height: 120px;
+   }
+   
+   .progress-circle svg {
+     transform: rotate(-90deg);
+   }
+   
+   .circle-center {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 20px;
+     font-weight: bold;
+   }
+   
+   .design-title {
+     text-align: center;
+     margin-bottom: 20px;
+   }
+   
+   .tables-layout {
+     display: flex;
+     justify-content: space-between;
+   }
+   
+   .design-table-container,
+   .task-table-container {
+     width: 48%;
+   }
+   
+   .design-table,
+   .task-table {
+     width: 100%;
+     border-collapse: collapse;
+   }
+   
+   .design-table th,
+   .task-table th,
+   .design-table td,
+   .task-table td {
+     border: 1px solid #68b655;
+     padding: 8px;
+   }
+   
+   
+     
+     .design-table tr:hover,
+     .task-table tr:hover {
+       background-color: #47a747;
+       cursor: pointer;
+     }
+     
+     .task-table input[type="checkbox"] {
+       cursor: pointer;
+     }
+     
+     h3 {
+       margin-top: 20px;
+       text-align: center;
+     }
+     
+     .upload-form {
+       margin-top: 20px;
+       text-align: center;
+     }
+     
+     .upload-form input[type="file"] {
+       margin-bottom: 10px;
+     }
+     
+     .popup-overlay {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 0, 0, 0.7);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+     
+     .open-form-btn {
+       display: block;
+       margin: 20px auto;
+       padding: 10px 20px;
+       background-color: #007BFF;
+       color: white;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+     }
+     
+     .open-form-btn:hover {
+       background-color: #0056b3;
+     }
+     
+     .employee-input label {
+       font-weight: bold;
+     }
+     
+     .employee-name p {
+       margin: 0;
+       font-size: 18px;
+     }
+     
+     .design-title {
+       margin-top: 40px;
+     }
+     
+     .table {
+       border-collapse: collapse;
+     }
+     
+     .th,
+     .td {
+       border: 1px solid #4b7a3f;
+       padding: 8px;
+     }
+     
+     .th {
+       background-color: #44754b;
+       text-align: left;
+     }
+     
+     .tr:hover {
+       background-color: #f5f5f5;
+     }
+     
+     input[type="text"],
+     input[type="date"] {
+       padding: 8px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       width: 100%;
+       box-sizing: border-box;
+     }
+     
+     input[type="checkbox"] {
+       width: auto;
+     }
+     
+     button {
+       padding: 10px 20px;
+       border: none;
+       background-color: #007BFF;
+       color: white;
+       cursor: pointer;
+       border-radius: 4px;
+     }
+     
+     button:hover {
+       background-color: #0056b3;
+     }
+     
+     button:disabled {
+       background-color: #cccccc;
+       cursor: not-allowed;
+     }
+     

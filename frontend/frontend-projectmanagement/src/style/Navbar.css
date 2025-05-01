@@ -1,0 +1,121 @@
+/* Navbar container */
+.navbar {
+    width: 100%; /* Full width like the sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px; /* Set the height of the Navbar */
+    padding: 5px;
+    background-color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: width 0.3s ease-in-out;
+    z-index: 1000;
+    color: white;
+  }
+  
+  /* Expanded Navbar */
+  .navbar.expanded {
+    width: calc(100% - 250px); /* Adjust this based on sidebar width */
+    margin-left: 250px; /* Shifts the navbar to the right when sidebar is expanded */
+  }
+  
+  /* Collapsed Navbar */
+  .navbar.collapsed {
+    width: calc(100% - 80px); /* Adjust this based on collapsed sidebar width */
+    margin-left: 80px; /* Shifts the navbar to the right when sidebar is collapsed */
+  }
+  
+  /* User info in Navbar */
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 40px;  
+    height: 40px;  
+    border-radius: 50%;  
+    object-fit: cover;  
+    margin-right: 10px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .profile-pic.loading {
+    opacity: 0; 
+  }
+
+  .user-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+  
+
+
+.main-content {
+  transition: margin-left 0.3s ease; 
+  flex-grow: 1;
+  padding: 20px;
+  margin-top: 60px; 
+}
+
+
+.main-content.expanded {
+  margin-left: 250px; 
+}
+
+
+.main-content.collapsed {
+  margin-left: 80px; 
+}
+
+.signout {
+  background-color: #555;  
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  margin-right: 10px;  /* Space from profile picture */
+}
+
+/* Hover effect for the Sign Out button */
+.signout:hover {
+  background-color: #777;  /* Lighter shade on hover */
+  transform: scale(1.05);  /* Slight zoom effect */
+}
+
+/* Focus effect for accessibility */
+.signout:focus {
+  outline: 2px solid #aaa;  /* Visible outline for keyboard focus */
+}
+
+/* Optional: Add a slight shadow to the button */
+.signout:active {
+  transform: scale(0.98);  /* Slight press-in effect when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.notification-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;  /* Space between bell and user name */
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  font-size: 24px;  /* Adjust size as needed */
+  color: white;  /* Ensure it matches your navbar theme */
+  transition: transform 0.2s ease;
+}
+
+.notification-btn:hover .notification-icon {
+  transform: scale(1.1);  /* Zoom effect on hover */
+}

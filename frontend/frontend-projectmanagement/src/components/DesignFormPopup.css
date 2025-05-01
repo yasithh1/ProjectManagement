@@ -1,0 +1,52 @@
+.popup-container {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: rgba(0, 0, 0, 0.5);
+   }
+   
+   .popup-form {
+     background: white;
+     padding: 20px;
+     border-radius: 8px;
+     width: 400px;
+   }
+   
+   .popup-form h2 {
+     text-align: center;
+   }
+   
+   .popup-form label {
+     display: block;
+     margin-bottom: 10px;
+   }
+   
+   .popup-form select,
+   .popup-form input {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 10px;
+   }
+   
+   .popup-form button {
+     width: 100%;
+     padding: 10px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     cursor: pointer;
+   }
+   
+   .popup-form button[type="button"] {
+     background-color: #dc3545;
+   }
+   
+   .popup-form button:hover {
+     opacity: 0.8;
+   }
+   

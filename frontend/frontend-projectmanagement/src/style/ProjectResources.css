@@ -1,0 +1,36 @@
+/* ProjectResources.css */
+
+.invoice-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+   }
+   
+   .invoice-table th,
+   .invoice-table td {
+     border: 1px solid #ddd;
+     padding: 8px;
+   }
+   
+   .invoice-table th {
+     background-color: #81eb77;
+   }
+   
+   .invoice-table tr:hover {
+     background-color: #4ca349;
+   }
+   
+   .invoice-table button {
+     margin-right: 8px;
+     padding: 4px 8px;
+     border: none;
+     background-color: #007BFF;
+     color: white;
+     cursor: pointer;
+     border-radius: 4px;
+   }
+   
+   .invoice-table button:hover {
+     background-color: #0056b3;
+   }
+   

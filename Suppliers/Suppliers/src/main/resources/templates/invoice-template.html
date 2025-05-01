@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .invoice-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .invoice-details {
+            margin-top: 20px;
+        }
+        .invoice-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .invoice-details table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="invoice-header">
+    <h1>Invoice</h1>
+    <p>Customer: <span th:text="${customerName}">Customer Name</span></p>
+</div>
+
+<div class="invoice-details">
+    <table>
+        <thead>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th> <!-- Total should be in a separate column -->
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${item}">Item</td>
+            <td th:text="${quantity}">Quantity</td>
+            <td th:text="${price}">Price</td>
+            <td th:text="${total}">Total</td> <!-- Total will be calculated dynamically -->
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* App Layout for Sidebar and Main Content */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+/* Main content area */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+  margin-top: 60px; /* Adjust this value to be the height of the Navbar */
+}
+
+/* Sidebar expanded */
+.main-content {
+  margin-left: 250px; /* Sidebar expanded width */
+}
+
+/* When sidebar is collapsed */
+.main-content.collapsed {
+  margin-left: 80px; /* Sidebar collapsed width */
+}

@@ -1,0 +1,121 @@
+
+   /* Container */
+   .designs-container {
+     max-width: 1200px;
+     margin: 50px auto;
+     padding: 20px;
+     background: white;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+   }
+   
+   .designs-title {
+     text-align: center;
+     color: #4CAF50;
+   }
+   
+   .designs-form-container {
+     float: right;
+     width: 30%;
+     padding: 20px;
+   }
+   
+   .designs-form-title {
+     color: #4CAF50;
+   }
+   
+   .designs-form {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+   }
+   
+   .designs-label {
+     font-weight: bold;
+   }
+   
+   .designs-input, .designs-select {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+   }
+   
+   .designs-button {
+     padding: 10px;
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+   }
+   
+   .designs-button:hover {
+     background-color: #45a049;
+   }
+   
+   .designs-error {
+     color: red;
+     font-weight: bold;
+   }
+   
+   /* Table Container */
+   .designs-table-container {
+     float: left;
+     width: 65%;
+   }
+   
+   .designs-table-title {
+     color: #4CAF50;
+   }
+   
+   .designs-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 5px 0;
+   }
+   
+   .designs-table th, .designs-table td {
+     padding: 10px;
+     border: 1px solid #36c242;
+     text-align: left;
+   }
+   
+   .designs-table th {
+     background-color: #4CAF50;
+     color: rgb(42, 165, 93);
+   }
+   
+   .designs-table tr:nth-child(even) {
+     background-color: #f2f2f2;
+   }
+   
+   .designs-table tr:hover {
+     background-color: #ddd;
+   }
+   
+   /* Divider */
+   .designs-divider {
+     clear: both;
+     margin: 20px 0;
+     border-top: 1px solid #ccc;
+   }
+   
+   /* Image Container */
+   .designs-image-container {
+     text-align: center;
+     margin: 20px 0;
+   }
+   
+   .designs-image {
+     max-width: 100%;
+     height: auto;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+   }
+   
+   /* Notification */
+   .designs-notification {
+     color: #4CAF50;
+     font-weight: bold;
+   }
+   

@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+     font-family: 'Arial', sans-serif;
+     background-color: #f9f9f9;
+     color: #333;
+     margin: 0;
+     padding: 0;
+   }
+   
+   /* Container */
+   .complains-container {
+     max-width: 800px;
+     margin: 50px auto;
+     padding: 20px;
+     background: white;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+   }
+   
+   /* Header */
+   .complains-title {
+     text-align: center;
+     color: #4CAF50;
+   }
+   
+   /* Form Container */
+   .complains-form {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     height: 50%; /* Increased height */
+   }
+   
+   .complains-label {
+     font-weight: bold;
+   }
+   
+   .complains-input, .complains-textarea {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+   }
+   
+   .complains-textarea {
+     resize: vertical;
+     width: 80%;
+   }
+   
+   .complains-button {
+     width: 150px;  /* Reduced width */
+     padding: 10px;
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     display: block; /* Ensures the margin auto works */
+     margin: 0 auto; /* Centers the button */
+   }
+   
+   .complains-button:hover {
+     background-color: #45a049;
+   }
+   
+   .complains-error {
+     color: red;
+     font-weight: bold;
+   }
+   
+   /* Divider */
+   .complains-divider {
+     margin: 20px 0;
+     border-top: 1px solid #ccc;
+   }
+   
+   /* Complains List */
+   .complains-list {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+   }
+   
+   .complains-item {
+     padding: 20px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     background-color: #f9f9f9;
+   }
+   
+   .complains-item-action {
+     border-left: 5px solid #4CAF50;
+   }
+   
+   .complains-item-title {
+     margin: 10px 0;
+     color: #141414;
+     font-weight: normal; /* Removed bold */
+   }
+   
+   .complains-item-detail {
+     margin: 5px 0;
+   }
+   

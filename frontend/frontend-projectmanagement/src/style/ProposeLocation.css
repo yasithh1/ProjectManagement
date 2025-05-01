@@ -1,0 +1,123 @@
+/* Small tiles container */
+.small-tiles-containers {
+  display: flex;                  /* Arrange tiles in a row */
+  justify-content: center;        /* Center tiles horizontally */
+  align-items: center;            /* Align tiles vertically */
+  gap: 20px;                      /* Space between each tile */
+  flex-wrap: wrap;                /* Allow tiles to wrap */
+  margin-top:0px;               /* Adds space above the tiles */
+  margin-bottom: 0px;            /* Adds space below the tiles */
+  position: relative;             /* Keeps tiles positioned at the top */
+  width: 100%;                    /* Ensure it spans the full width */
+  z-index: 10;                    /* Ensures they stay at the top */
+}
+
+.propose-location-container {
+  display: flex;                 
+  justify-content: space-between; 
+  gap: 20px;                    
+  padding: 20px;
+  margin-top: 20px;   
+  width: 100%;                   
+  flex-wrap: wrap;                
+}
+
+
+.form-container {
+  flex: 0 1 36%;                 
+  padding: 10px;
+  margin-right: 5px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.table-container {
+  flex: 0 1 45%;               
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;               
+  margin-left: auto;              
+}
+
+.location-form .form-group {
+  margin-bottom: 10px;
+}
+
+.location-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 2px;
+  display: block;
+  padding: 0px;
+}
+
+.location-form .form-group input,
+.location-form .form-group select{
+
+  width: 150%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.location-form .form-group textarea {
+  width: 200%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.location-form .submit-button {
+  width:50%;                   
+  padding: 10px;
+  background-color: #5BC0EB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto;               
+  display: block;               
+}
+
+
+.location-form .submit-button:hover {
+  background-color: #45a6cb;
+}
+
+.location-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.location-table th{
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #c9a8a8; 
+  background-color: #0e5812;
+}
+.location-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #dfb0b0;
+}
+
+.location-table th {
+  background-color: #459b77;
+}
+
+.edit-button button {
+  background-color: #48ce4f;
+  color: rgb(20, 17, 17);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #45a6cb;
+}
